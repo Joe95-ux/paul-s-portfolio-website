@@ -68,33 +68,32 @@ if (autoplayWrap !== null) {
     const dotsArray = generateDotBtns(dots, embla);
     const setSelectedDotBtn = selectDotBtn(dotsArray, embla);
 
-    const prevBtn = view.nextElementSibling.nextElementSibling;
-    const nextBtn =
-      view.nextElementSibling.nextElementSibling.nextElementSibling;
+    // const prevBtn = view.nextElementSibling.nextElementSibling;
+    // const nextBtn = view.nextElementSibling.nextElementSibling.nextElementSibling;
 
-    const setupPrevNextBtns = (prevBtn, nextBtn, embla) => {
-      prevBtn.addEventListener("click", embla.scrollPrev, false);
-      nextBtn.addEventListener("click", embla.scrollNext, false);
-    };
+    // const setupPrevNextBtns = (prevBtn, nextBtn, embla) => {
+    //   prevBtn.addEventListener("click", embla.scrollPrev, false);
+    //   nextBtn.addEventListener("click", embla.scrollNext, false);
+    // };
 
-    const disablePrevNextBtns = (prevBtn, nextBtn, embla) => {
-      return () => {
-        if (embla.canScrollPrev()) prevBtn.removeAttribute("disabled");
-        else prevBtn.setAttribute("disabled", "disabled");
+    // const disablePrevNextBtns = (prevBtn, nextBtn, embla) => {
+    //   return () => {
+    //     if (embla.canScrollPrev()) prevBtn.removeAttribute("disabled");
+    //     else prevBtn.setAttribute("disabled", "disabled");
 
-        if (embla.canScrollNext()) nextBtn.removeAttribute("disabled");
-        else nextBtn.setAttribute("disabled", "disabled");
-      };
-    };
+    //     if (embla.canScrollNext()) nextBtn.removeAttribute("disabled");
+    //     else nextBtn.setAttribute("disabled", "disabled");
+    //   };
+    // };
 
-    const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
-    setupPrevNextBtns(prevBtn, nextBtn, embla);
+    // const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
+    // setupPrevNextBtns(prevBtn, nextBtn, embla);
     setupDotBtns(dotsArray, embla);
 
     embla.on("select", setSelectedDotBtn);
-    embla.on("select", disablePrevAndNextBtns);
+    // embla.on("select", disablePrevAndNextBtns);
     embla.on("init", setSelectedDotBtn);
-    embla.on("init", disablePrevAndNextBtns);
+    // embla.on("init", disablePrevAndNextBtns);
 
     view.addEventListener("mouseenter", autoplay.stop, false);
     view.addEventListener("touchstart", autoplay.stop, false);

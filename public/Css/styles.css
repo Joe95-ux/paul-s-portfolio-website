@@ -56,6 +56,8 @@ section {
     border-radius: 5px;
     background-color: var(--mainWhite);
     box-shadow: 0 2px 2px #ccc;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
 
 }
 
@@ -245,7 +247,6 @@ section {
     justify-content: space-between;
     margin: 3.5rem 0;
     text-align: left;
-    line-height: 1.2;
     color: var(--mainBlack);
 }
 
@@ -255,7 +256,7 @@ section {
 
 .header-main h1 {
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .header-main h2 {
@@ -267,10 +268,10 @@ section {
     font-size: 1.3rem;
     margin: 1.2rem 0 2.5rem;
     font-weight: 400;
+    line-height: 1.4;
 }
 
 .name {
-    font-weight: 600;
     color: var(--primaryColor);
 }
 
@@ -355,6 +356,7 @@ a.work:hover {
 }
 
 .sample-work .embla__slide__inner {
+    position: relative;
     width: 100%;
     min-height: 200px;
 }
@@ -363,6 +365,7 @@ a.work:hover {
     display: block;
     height: 400px;
     width: 600px;
+    border-radius: 25px 0 25px 0;
 }
 
 .autoplay__slide {
