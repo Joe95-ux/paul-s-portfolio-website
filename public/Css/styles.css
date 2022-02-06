@@ -31,13 +31,13 @@ section {
     padding: 3% 0;
     background: var(--mainGrey);
     background-position: center;
-    max-height: 600px;
 }
 
 .navigation {
+    position: absolute;
+    top: 0;
     width: 100%;
-    z-index: 2000;
-    padding: 0.7rem 0;
+    z-index: 6;
     background: #ECECEC;
     font-family: 'Raleway', sans-serif;
     transition: var(--mainTransition);
@@ -51,8 +51,8 @@ section {
 }
 
 .navigation .wrapper {
-    margin-top: 1.3rem;
     padding: 0 0.4rem;
+    margin-top: 1.3rem;
     border-radius: 5px;
     background-color: var(--mainWhite);
     box-shadow: 0 2px 2px #ccc;
@@ -245,7 +245,7 @@ section {
 .header-main {
     display: flex;
     justify-content: space-between;
-    margin: 3.5rem 0;
+    margin: 6rem 0 5rem;
     text-align: left;
     color: var(--mainBlack);
 }
@@ -352,8 +352,10 @@ a.work:hover {
 .sample-work {
     flex-basis: 53%;
     max-width: 53%;
+    margin: 0;
 
 }
+
 
 .sample-work .embla__slide__inner {
     position: relative;
@@ -364,7 +366,7 @@ a.work:hover {
 .sample-work .embla__slide__img {
     display: block;
     height: 400px;
-    width: 600px;
+    width: 610px;
     border-radius: 25px 0 25px 0;
 }
 
@@ -379,7 +381,6 @@ a.work:hover {
 /* About me */
 
 #about-me {
-    padding: 4% 5%;
     position: relative;
     color: var(--mainBlack);
     background-color: var(--mainWhite);
@@ -1127,7 +1128,7 @@ a.work:hover {
     border-radius: 5px;
     width: 100%;
     height: 5px;
-    background-color: var(--mainWhite);
+    background-color:var(--mainGrey);
     margin-bottom: 10px;
 }
 
