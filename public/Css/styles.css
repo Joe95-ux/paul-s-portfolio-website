@@ -1674,7 +1674,7 @@ a.work:hover {
 
 .address p {
     font-size: 1.1rem;
-    color: grey;
+    color: var(--mainGrey);
 }
 
 .address a {
@@ -1697,10 +1697,12 @@ a.work:hover {
     font-size: 1.1rem;
     text-transform: uppercase;
     margin-left: 20px;
+    font-weight: 400;
+    color: #ECECEC;
 }
 
 footer {
-    color: var(--mainWhite);
+    color: #ECECEC;
     margin-top: 15px;
 }
 
@@ -1712,6 +1714,10 @@ footer {
 
 .fa-heart {
     color: red
+}
+
+.copyright a{
+    color: var(--mainWhite);
 }
 
 .copyright a,
