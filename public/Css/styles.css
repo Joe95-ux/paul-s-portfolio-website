@@ -48,6 +48,7 @@ section {
     margin-right: auto;
     width: 90vw;
     max-width: 1170px;
+    position: relative;
 }
 
 .navigation .wrapper {
@@ -377,6 +378,7 @@ a.work:hover {
     position: relative;
     padding-left: 0;
 }
+
 
 /* About me */
 
@@ -1087,10 +1089,11 @@ a.work:hover {
 }
 
 .skills-progress-bars h1,
-.skills-cards h1 {
+.skills-cards h1,
+.why-choose-me-wrapper h2 {
     color: var(--primaryColor);
     font-size: 1.7rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .skills-progress-bars p {
@@ -1160,6 +1163,50 @@ a.work:hover {
     text-align: center;
     color: var(--mainWhite);
     background-color: var(--secondaryColor);
+
+}
+
+.why-choose-me-wrapper h2{
+    margin: 2rem 0 1rem;
+    
+}
+.why-choose-me{
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 2px 2px #ccc;
+    border-radius: 5px;
+    background-color: #FAFAF9;
+    z-index: 6;
+}
+.quality{
+    flex: 1;
+    display: flex;
+    padding: 0.8rem 1rem;
+    text-align: left;
+}
+.quality:not(:last-child){
+    border-right: 1px solid rgb(243, 241, 241);
+
+}
+
+.quality i{
+    color: var(--secondaryColor);
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+    max-height: 2rem;
+}
+.quality h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    margin: 0 0 0.5rem;
+}
+.quality  p {
+    font-size: 1rem;
+    color: var(--mainBlack);
+    line-height: 1.2;
 
 }
 
