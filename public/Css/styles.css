@@ -38,7 +38,8 @@ section {
     top: 0;
     width: 100%;
     z-index: 6;
-    background: #ECECEC;
+    padding: 0.5rem 0;
+    background: inherit;
     font-family: 'Raleway', sans-serif;
     transition: var(--mainTransition);
 }
@@ -51,7 +52,7 @@ section {
     position: relative;
 }
 
-.navigation .wrapper {
+/* .navigation .wrapper {
     padding: 0 0.4rem;
     margin-top: 1.3rem;
     border-radius: 5px;
@@ -60,7 +61,7 @@ section {
     transition: var(--mainTransition);
     -webkit-transition: var(--mainTransition);
 
-}
+} */
 
 .navigation .wrapper,
 .navigation {
@@ -82,7 +83,7 @@ section {
 
 .nav_links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 65%;
     z-index: 5;
 }
@@ -225,6 +226,7 @@ section {
 
 .scrolling-active {
     position: fixed;
+    background-color: var(--primaryColor);
     top: 0;
 }
 
@@ -233,11 +235,12 @@ section {
     width: 80px;
     height: 45px;
     font-family: 'Raleway', sans-serif;
+    background-color: var(--mainWhite);
 }
 
 
 .scrolling-active .nav_links a {
-    color: var(--primaryColor);
+    color: var(--mainGrey);
     font-size: 1rem;
 }
 
@@ -261,7 +264,7 @@ section {
 }
 
 .header-main h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -1068,16 +1071,9 @@ a.work:hover {
 }
 
 @media screen and (max-width:795px) {
-    .skills-container {
-        display: block;
-    }
 
     .skills-progress-bars {
         margin-bottom: 20px;
-    }
-
-    .skills-img-right {
-        display: none;
     }
 
 }
@@ -1120,7 +1116,7 @@ a.work:hover {
 .skill h4 {
     display: inline-block;
     margin-bottom: 7px;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .skill-level {
@@ -1145,14 +1141,70 @@ a.work:hover {
 
 .skills-img-right {
     position: relative;
-    background: url(../images/bookcover.jpg);
     width: 100%;
     height: auto;
     flex-basis: 45%;
-    border-radius: 5px;
 }
 
-.skills-img-right div {
+.skills-why-choose-me{
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    text-align: left;
+}
+
+.skills-why-choose-me h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+.skills-why-choose-me h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 2.5rem;
+    right: -3rem;
+    top: 50%;
+    border-radius: 5px;
+    transform: translateY(50%);
+    background-color: var(--mainWhite);
+}
+
+.skills-why-choose-me p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--mainGrey);
+}
+.skills-why-choose-me-wrapper{
+    margin-top: 1.5rem;
+}
+.skills-why-choose-me-wrapper div{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-why-choose-me-wrapper div:not(:last-child){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.skills-why-choose-me-wrapper div:first-child{
+    padding-bottom: 1rem;
+}
+.skills-why-choose-me-wrapper div:last-child{
+    padding: 1rem 0 0;
+}
+.skills-why-choose-me-wrapper div.padding-top-bottom{
+    padding: 1rem 0;
+}
+.skills-why-choose-me-wrapper div i{
+    margin-right: 10px;
+    margin-top: 2px;
+    font-size: 1.3rem;
+}
+
+.skills-img-right .project-count {
     position: absolute;
     bottom: 80px;
     left: -50px;
