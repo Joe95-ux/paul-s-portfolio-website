@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding: 3% 2rem;
+    padding: 3rem 2rem;
     color: white;
 }
 
@@ -28,7 +28,6 @@ section {
 /* header section */
 #header {
     position: relative;
-    padding: 3% 0;
     background: var(--mainGrey);
     background-position: center;
 }
@@ -39,7 +38,6 @@ section {
     width: 100%;
     z-index: 6;
     padding: 0.5rem 0;
-    background: inherit;
     font-family: 'Raleway', sans-serif;
     transition: var(--mainTransition);
 }
@@ -78,7 +76,7 @@ section {
     width: auto;
     height: auto;
     border-radius: 10px;
-    transition: var(--mainTransition)
+    transition: var(--mainTransition);
 }
 
 .nav_links {
@@ -157,15 +155,27 @@ section {
 
     .nav_links {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: flex-start;
         position: absolute;
-        right: 0;
-        top: 8vh;
-        height: 92vh;
-        width: 50%;
-        padding-left: 1rem;
+        right: -2.5rem;
+        top: 7vh;
+        height: 93vh;
+        width: 50vw;
+        padding-left: 2rem;
+        background-color: var(--mainGrey);
+        color: var(--mainWhite);
+        transform: translateX(100vw);
+    }
+
+    .scrolling-active .nav_links{
         background-color: var(--primaryColor);
-        transform: translateX(100%);
+    }
+
+    .nav_links li a{
+       display: inline-block;
+    }
+    .nav_links li:not(:last-child){
+        margin-bottom: 1rem;
     }
 
     .nav_links li {
@@ -178,7 +188,7 @@ section {
     }
 
     .nav_active {
-        transform: translateX(0%);
+        transform: translateX(0);
         transition: transform 0.5s ease-in;
     }
 
@@ -280,8 +290,10 @@ section {
 }
 
 @media screen and (max-width:765px) {
-    .scrolling-active .nav_links {
-        justify-content: space-around;
+    .scrolling-active .nav_links{
+        top: 6vh;
+        height: 94vh;
+
     }
 
 
@@ -1060,7 +1072,7 @@ a.work:hover {
 /* Skills */
 #skills {
     background-color: var(--mainWhite);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .skills-container {
@@ -1364,7 +1376,6 @@ a.work:hover {
     flex-direction: column;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    padding: 3%;
 }
 
 .portfolio-container {
@@ -1564,7 +1575,6 @@ a.work:hover {
 /* testimonials */
 /* customer review */
 #testimonials {
-    padding: 3% 5%;
     background-image: url(../images/beanstalk.png);
     background-position: center;
     display: flex;
@@ -1679,7 +1689,7 @@ a.work:hover {
 /* brands */
 #brands {
     position: relative;
-    padding: 4% 5%;
+    padding: 3rem 2rem;
     background-color: var(--mainGrey);
     text-align: left;
 }
@@ -1738,8 +1748,7 @@ a.work:hover {
 
 /* Contact */
 #contact {
-    padding: 3% 5%;
-    font-family: 'Raleway', sans-serif;
+    padding: 3rem 2rem;
     background-image: url(../images/contact-bg.png);
 }
 
