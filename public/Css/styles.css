@@ -1689,7 +1689,7 @@ a.work:hover {
 /* brands */
 #brands {
     position: relative;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 6rem;
     background-color: var(--mainGrey);
     text-align: left;
 }
@@ -1709,7 +1709,7 @@ a.work:hover {
     position: absolute;
     top: 10%;
     left: -3.7rem;
-    height: 3.5px;
+    height: 4px;
     width: 3.7rem;
     border-radius: 5px;
     background-color: var(--secondaryColor);
@@ -1746,10 +1746,51 @@ a.work:hover {
     margin: 20px;
 }
 
+.call-to-action{
+    position: absolute;
+    bottom: -9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background-color: var(--mainWhite);
+    border-radius: 10px;
+    color: var(--primaryColor);
+}
+
+.call-to-action h2{
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.call-to-action h2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+    left: -2rem;
+    height: 4px;
+    width: 2rem;
+}
+
+.cta-btn{
+    text-transform: capitalize;
+    flex-basis: 20%;
+}
+
+.cta-btn i{
+    margin-left: 5px;
+}
+
 /* Contact */
 #contact {
-    padding: 3rem 2rem;
+    padding: 6rem 2rem 3rem;
     background-image: url(../images/contact-bg.png);
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 .contact-container {
@@ -1778,6 +1819,7 @@ a.work:hover {
     font-size: 1.3rem;
     margin-bottom: 3px;
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 .address p {
