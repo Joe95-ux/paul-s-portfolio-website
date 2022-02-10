@@ -415,8 +415,8 @@ a.work:hover {
 
 .heading {
     font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--secondaryColor);
+    font-weight: 700;
+    color: var(--primaryColor);
     font-family: 'Raleway', sans-serif;
     text-align: center;
     text-transform: capitalize;
@@ -1096,8 +1096,7 @@ a.work:hover {
     line-height: 1.5;
 }
 
-.skills-progress-bars h1,
-.skills-cards h1,
+.skills-progress-bars,
 .why-choose-me-wrapper h2 {
     color: var(--primaryColor);
     font-size: 1.7rem;
@@ -1368,6 +1367,86 @@ a.work:hover {
     background-color: black;
 }
 
+.what-we-do-wrapper{
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    background-color: var(--mainWhite);
+    color: var(--primaryColor);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 1.5rem;
+}
+
+.what-we-do-wrapper .job{
+    display: flex;
+}
+
+.job .fa-pencil-ruler{
+    margin: 4px 10px 0 0;
+
+}
+
+.job .fa-long-arrow-alt-right{
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: auto;
+    font-size: 1.5rem;
+    padding: 3px 8px;
+    background-color: var(--mainGrey);
+    border-radius: 5px;
+    user-select: none;
+    border: 1px solid var(--secondaryColor);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    cursor: pointer;
+}
+.job .fa-long-arrow-alt-right:hover{
+    border: none;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+}
+.job div h3{
+    margin-bottom: 5px;
+}
+.border-btm{
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid var(--secondaryColor);
+}
+.border-top{
+    padding-top: 1.3rem;
+}
+
+@media screen and  (max-width:1028px){
+    .third-pad-top{
+        padding-top:1.3rem ;
+        
+    }
+    .fouth-border-btm{
+        border-bottom: 1px solid var(--secondaryColor);
+
+    }
+
+}
+
+@media screen and  (max-width:724px){
+    .second-pad-top{
+        padding-top:1.3rem ;
+        
+    }
+    .fouth-border-btm{
+        padding-bottom: 1.3rem;
+
+    }
+    .fifth-border-btm{
+        border-bottom: 1px solid var(--secondaryColor);
+        padding-bottom: 1.3rem;
+    }
+    
+    
+
+}
+
+
 
 /* portfolio */
 #portfolio {
@@ -1544,7 +1623,7 @@ a.work:hover {
 .heading-container p {
     color: var(--mainBlack);
     font-size: 1.2rem;
-    margin: 0 0 10px;
+    margin: -8px 0 8px;
 }
 
 .posters {
