@@ -1096,7 +1096,7 @@ a.work:hover {
     line-height: 1.5;
 }
 
-.skills-progress-bars,
+.skills-progress-bars, .skills-progress-bars h1, 
 .why-choose-me-wrapper h2 {
     color: var(--primaryColor);
     font-size: 1.7rem;
@@ -1132,6 +1132,7 @@ a.work:hover {
 
 .skill-level {
     float: right;
+    margin-top: 8px;
 }
 
 .progress-bar-container {
@@ -1139,7 +1140,6 @@ a.work:hover {
     width: 100%;
     height: 5px;
     background-color:var(--mainGrey);
-    margin-bottom: 10px;
 }
 
 .progress-bar {
@@ -1175,12 +1175,11 @@ a.work:hover {
 .skills-why-choose-me h2::after{
     position: absolute;
     content: "";
-    height: 2px;
+    height: 4px;
     width: 2.5rem;
-    right: -3rem;
-    top: 50%;
+    left: 0;
+    bottom: -0.6rem;
     border-radius: 5px;
-    transform: translateY(50%);
     background-color: var(--mainWhite);
 }
 
