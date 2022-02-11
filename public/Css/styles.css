@@ -11,7 +11,9 @@
     --mainWhite: #fff;
     --mainBlack: #222;
     --mainGrey: #ececec;
+    --darkGrey: #D5D5D5;
     --mainSpacing: 0.1rem;
+    --mainFontWeight:400;
     --mainTransition: all 0.3s linear;
 }
 
@@ -429,18 +431,8 @@ a.work:hover {
     justify-content: space-between;
 }
 
-.about-img,
 .about-content {
-    flex-basis: 47%;
-    z-index: 5;
-}
-
-.about-img {
-    position: relative;
-    background: url(../images/about-image-bg.jpg) center repeat;
-    height: 500px;
-    width: 100%;
-    border-radius: 5px;
+    flex-basis: 53%
 }
 
 @media (max-width:777px) {
@@ -448,30 +440,51 @@ a.work:hover {
         display: block;
     }
 
-    .about-img {
+    .about-left {
         display: none;
     }
 
 }
 
-.banner {
+.about-left{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.4rem;
+    row-gap: 0.4rem;
+    height: 457px;
     width: 100%;
-    height: 25%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.5;
+    flex-basis: 43%;
 }
-
-.banner-text {
-    position: absolute;
-    top: 30px;
-    padding: 0 1.5rem;
-    color: var(--primaryColor);
-    text-align: center;
-    z-index: 2;
+.about-us-text{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    border-radius: 10px;
+    grid-column: 1/2;
+    background-color: var(--mainGrey);
+    color:var(--primaryColor);
+}
+.about-us-text div{
+    margin: auto 0 0 auto;
+}
+.about-us-text h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.about-us-text, .about-left-image1{
+    height: 235px;
+}
+.about-left-image1, .about-left-image2{
+    border-radius: 10px;
+    width: 100%;
+}
+.about-left-image1{
+    grid-column: 2/3;
+}
+.about-left-image2{
+    grid-column: 1/3;
+    height: 215px;
 }
 
 .about-content {
@@ -1722,9 +1735,9 @@ a.work:hover {
     content: '';
     position: absolute;
     top: 10%;
-    left: -3.7rem;
+    left: -2rem;
     height: 4px;
-    width: 3.7rem;
+    width: 2rem;
     border-radius: 5px;
     background-color: var(--secondaryColor);
 }
@@ -1777,6 +1790,7 @@ a.work:hover {
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 1rem;
+    font-weight: 500;
 }
 
 .call-to-action h2::after{
@@ -1801,73 +1815,48 @@ a.work:hover {
 
 /* Contact */
 #contact {
-    padding: 6rem 2rem 3rem;
+    padding: 7rem 2rem 3rem;
     background-image: url(../images/contact-bg.png);
     line-height: 1.5;
     font-weight: 400;
-}
-
-.contact-container {
-    margin-bottom: 15px;
-}
-
-.contact-main,
-.social {
-    flex-basis: 45%;
-}
-
-.contact-main {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    background-color: inherit;
-    text-align: left;
-    color: var(--mainWhite);
-}
-
-.address>div {
-    margin-bottom: 10px;
-}
-
-.address h4 {
-    font-size: 1.3rem;
-    margin-bottom: 3px;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-
-.address p {
-    font-size: 1.1rem;
     color: var(--mainGrey);
 }
 
-.address a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--secondaryColor);
+.social, .social div {
+   display: flex;
+   align-items: center;
 }
-
-.social {
-    line-height: 1.4;
-}
-
-.social ul li {
-    list-style: none;
+.social{
+    margin-right: auto;
+    margin-bottom: 0.8rem;
+    text-align: left;
     font-size: 1.2rem;
 }
 
-.social ul li a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    margin-left: 20px;
+.social div{
+    justify-content: space-between;
+}
+.social h3{
+    margin-right: 2rem;
     font-weight: 400;
-    color: #ECECEC;
+    color: var(--darkGrey);
+    
 }
+
+
+.social  a {
+    text-decoration: none;
+    color: var(--darkGrey);
+    font-size: 1.4rem;
+}
+.social  a:not(:last-child){
+    margin-right: 10px;
+}
+
 
 footer {
-    color: #ECECEC;
-    margin-top: 15px;
+    color: var(--mainWhite);
+    margin-top: 0.8rem;
 }
 
 .copyright {
@@ -1894,19 +1883,10 @@ footer {
         width: 100%;
     }
 
-    .address a,
-    .address h4,
-    .social ul li,
     .copyright {
         font-size: 1rem;
     }
 
-    .address p {
-        color: grey;
-    }
-
-    .social ul li a,
-    .address p,
     footer {
         font-size: 0.85rem;
     }
