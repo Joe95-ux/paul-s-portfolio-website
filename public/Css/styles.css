@@ -41,6 +41,7 @@ section {
     z-index: 6;
     padding: 0.5rem 0;
     font-family: 'Raleway', sans-serif;
+    background-color: var(--mainGrey);
     transition: var(--mainTransition);
 }
 
@@ -169,10 +170,6 @@ section {
         transform: translateX(100vw);
     }
 
-    .scrolling-active .nav_links{
-        background-color: var(--primaryColor);
-    }
-
     .nav_links li a{
        display: inline-block;
     }
@@ -238,7 +235,7 @@ section {
 
 .scrolling-active {
     position: fixed;
-    background-color: var(--primaryColor);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3); 
     top: 0;
 }
 
@@ -247,12 +244,12 @@ section {
     width: 80px;
     height: 45px;
     font-family: 'Raleway', sans-serif;
-    background-color: var(--mainWhite);
+    
 }
 
 
 .scrolling-active .nav_links a {
-    color: var(--mainGrey);
+    
     font-size: 1rem;
 }
 
@@ -1819,7 +1816,7 @@ a.work:hover {
     background-image: url(../images/contact-bg.png);
     line-height: 1.5;
     font-weight: 400;
-    color: var(--mainGrey);
+    color: var(--mainWhite);
 }
 
 .social, .social div {
@@ -1839,15 +1836,19 @@ a.work:hover {
 .social h3{
     margin-right: 2rem;
     font-weight: 400;
-    color: var(--darkGrey);
+    color: var(--mainWhite);
     
 }
 
 
 .social  a {
     text-decoration: none;
-    color: var(--darkGrey);
+    color: darkgrey;
     font-size: 1.4rem;
+    transition: var(--mainTransition);
+}
+.social  a:hover{
+    color: var(--mainWhite);
 }
 .social  a:not(:last-child){
     margin-right: 10px;
