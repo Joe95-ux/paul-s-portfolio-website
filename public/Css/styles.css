@@ -40,7 +40,7 @@ section {
     width: 100%;
     z-index: 6;
     padding: 0.5rem 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--mainGrey);
     transition: var(--mainTransition);
 }
@@ -101,17 +101,18 @@ section {
 }
 .nav_links .nav_link{
     position: relative;
-    letter-spacing: 1.3px;
-    transition: all 200ms ease-in-out;
     overflow: hidden;
     
 }
 
-.nav_links a {
+.nav_link a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    color: var(--mainBlack);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--primaryColor);
+    transition: all 200ms ease-in-out;
 }
 
 .nav_links a::after,
