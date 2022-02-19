@@ -738,12 +738,6 @@ a.work:hover {
 /* all hover effects for our .profile-card */
 @media (hover) {
 
-    .resume-bio .image:hover,
-    .resume-bio .image:focus-within {
-        transform: scale(1.01);
-
-    }
-
     .profile-card {
         transform: translateY(65%);
         transition: transform 0.5s ease;
