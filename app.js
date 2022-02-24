@@ -16,6 +16,10 @@ app.get("/resume", function(req, res){
     res.render('resume');
 })
 
+app.get("/logo", function(req, res){
+    res.render('logo');
+})
+
 
 
 

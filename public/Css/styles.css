@@ -1733,3 +1733,38 @@ footer {
         transition-delay: 0ms !important;
     }
 }
+
+/* Project page styles */
+
+.logo-header-grid{
+    flex-basis: 53%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0.8rem;
+    column-gap: 0.8rem;
+    position: relative;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.logo-header-grid div{
+    background-color: var(--mainWhite);
+    position: relative;
+    
+}
+
+.logo-header-grid img{
+    max-height: 200px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+.normal-border{
+    border-radius: 55px 15px 45px 10px;
+}
+.curved-border{
+    border-radius:  15px 45px 45px 45px ;
+}
