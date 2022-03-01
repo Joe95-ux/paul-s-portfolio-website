@@ -13,7 +13,7 @@
     --mainGrey: #ececec;
     --darkGrey: #D5D5D5;
     --mainSpacing: 0.1rem;
-    --mainFontWeight:400;
+    --mainFontWeight: 400;
     --mainTransition: all 0.3s linear;
 }
 
@@ -72,7 +72,7 @@ section {
 
 }
 
-.logo-container{
+.logo-container {
     position: relative;
     max-width: 140px;
     max-height: 58px;
@@ -99,10 +99,11 @@ section {
     /* margin: 0 auto; */
     list-style: none;
 }
-.nav_links .nav_link{
+
+.nav_links .nav_link {
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .nav_link a {
@@ -179,10 +180,11 @@ section {
         transform: translateX(100vw);
     }
 
-    .nav_links li a{
-       display: inline-block;
+    .nav_links li a {
+        display: inline-block;
     }
-    .nav_links li:not(:last-child){
+
+    .nav_links li:not(:last-child) {
         margin-bottom: 1rem;
     }
 
@@ -244,28 +246,29 @@ section {
 
 .scrolling-active {
     position: fixed;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3);
     top: 0;
 }
 
 
 .scrolling-active .logo-container {
     transform: scale(0.9);
-    
+
 }
 
 
-.scrolling-active .nav_links a{
+.scrolling-active .nav_links a {
     font-size: 1rem;
     transition: var(--mainTransition);
 }
 
+.header-main{
+    margin: 6rem 0 5rem;
+}
 
-
-.header-main {
+.header-main, .project-main {
     display: flex;
     justify-content: space-between;
-    margin: 6rem 0 5rem;
     text-align: left;
     color: var(--mainBlack);
 }
@@ -296,7 +299,7 @@ section {
 }
 
 @media screen and (max-width:765px) {
-    .scrolling-active .nav_links{
+    .scrolling-active .nav_links {
         top: 6vh;
         height: 94vh;
 
@@ -361,7 +364,7 @@ a.primary {
     color: var(--mainBlack);
 }
 
-a.primary:hover{
+a.primary:hover {
     border-color: var(--secondaryColor);
     color: var(--primaryColor);
 }
@@ -456,7 +459,7 @@ a.work:hover {
 
 }
 
-.about-left{
+.about-left {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -466,33 +469,42 @@ a.work:hover {
     width: 100%;
     flex-basis: 43%;
 }
-.about-us-text{
+
+.about-us-text {
     display: flex;
     justify-content: flex-end;
     padding: 1.5rem;
     border-radius: 10px;
     grid-column: 1/2;
     background-color: var(--mainGrey);
-    color:var(--primaryColor);
+    color: var(--primaryColor);
 }
-.about-us-text div{
+
+.about-us-text div {
     margin: auto 0 0 auto;
 }
-.about-us-text h3{
+
+.about-us-text h3 {
     font-size: 2.5rem;
     font-weight: 600;
 }
-.about-us-text, .about-left-image1{
+
+.about-us-text,
+.about-left-image1 {
     height: 235px;
 }
-.about-left-image1, .about-left-image2{
+
+.about-left-image1,
+.about-left-image2 {
     border-radius: 10px;
     width: 100%;
 }
-.about-left-image1{
+
+.about-left-image1 {
     grid-column: 2/3;
 }
-.about-left-image2{
+
+.about-left-image2 {
     grid-column: 1/3;
     height: 215px;
 }
@@ -623,6 +635,7 @@ a.work:hover {
     text-align: left;
     background-color: var(--mainGrey);
 }
+
 .resume-wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -630,7 +643,8 @@ a.work:hover {
     max-width: 1370px;
     position: relative;
 }
-.go-back{
+
+.go-back {
     margin: 0 0 1.3rem;
     padding: 0.5rem 1.4rem;
     color: var(--primaryColor);
@@ -643,7 +657,8 @@ a.work:hover {
     text-transform: capitalize;
     transition: var(--mainTransition);
 }
-.go-back:hover{
+
+.go-back:hover {
     color: var(--mainWhite);
     background-color: var(--mainBlack);
     box-shadow: none;
@@ -654,7 +669,10 @@ a.work:hover {
     display: flex;
     justify-content: space-between;
 }
-.resume-bio, .education, .work-experience{
+
+.resume-bio,
+.education,
+.work-experience {
     box-shadow: 0 2px 2px #ccc;
 }
 
@@ -681,7 +699,7 @@ a.work:hover {
     display: none;
 }
 
-.resume-avatar-container{
+.resume-avatar-container {
     display: none;
 }
 
@@ -771,53 +789,66 @@ a.work:hover {
 
 }
 
-.resume-bio-inner{
+.resume-bio-inner {
     padding: 1.3rem;
     color: var(--primaryColor);
 }
 
-.about-heading{
-   font-size: 1.3rem;
-   color: var(--mainBlack);
-   margin-bottom: 0.6rem;
+.about-heading {
+    font-size: 1.3rem;
+    color: var(--mainBlack);
+    margin-bottom: 0.6rem;
 }
 
-.about-designer-content{
+.about-designer-content {
     font-size: 1.1rem;
     line-height: 1.3;
     margin-bottom: 1.2rem;
 }
-.contacts, .design-skills, .languages, .references{
+
+.contacts,
+.design-skills,
+.languages,
+.references {
     margin-bottom: 1.2rem;
 }
-.contacts p, .references p{
+
+.contacts p,
+.references p {
     line-height: 1.8;
     font-size: 1.1rem;
 }
 
-.contacts p i, .references p i{
+.contacts p i,
+.references p i {
     margin-right: 1rem;
     color: var(--secondaryColor);
 }
-.contacts p a, .references p a{
+
+.contacts p a,
+.references p a {
     color: var(--primaryColor);
 }
 
-.design-skills{
+.design-skills {
     margin-bottom: 1.2rem;
 }
 
-.design-skills .skill:not(:last-child), .languages .skill:not(:last-child) {
+.design-skills .skill:not(:last-child),
+.languages .skill:not(:last-child) {
     margin-bottom: 0.8rem;
 }
-.design-skills .skill h4, .languages .skill h4{
+
+.design-skills .skill h4,
+.languages .skill h4 {
     font-size: 1.1rem;
 }
-.references .reference{
+
+.references .reference {
     font-size: 1.2rem;
 }
 
-.eduandwork{
+.eduandwork {
     display: flex;
     flex-direction: column;
     flex-basis: 61%;
@@ -825,68 +856,77 @@ a.work:hover {
     row-gap: 0.8rem;
 }
 
-.work-experience, .education{
+.work-experience,
+.education {
     padding: 1.8rem;
     color: var(--primaryColor);
     background-color: var(--mainWhite);
     font-weight: 400;
     border-radius: 10px;
 }
-.work-experience{
+
+.work-experience {
     position: relative;
-    
+
 }
-.right-heading{
+
+.right-heading {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: var(--mainBlack);
     text-transform: capitalize;
 }
-.right-heading i{
+
+.right-heading i {
     color: var(--secondaryColor);
     margin-right: 1rem;
 }
-.inner-content h4{
+
+.inner-content h4 {
     font-size: 1.3rem;
     color: var(--mainBlack);
     margin-bottom: 0.8rem;
 }
 
-.inner-content h5{
+.inner-content h5 {
     font-size: 1.2rem;
     color: var(--secondaryColor);
     margin-bottom: 1rem;
 }
-.inner-content h5 i{
+
+.inner-content h5 i {
     margin-right: 1rem;
 }
-.inner-content p{
+
+.inner-content p {
     color: var(--primaryColor);
     line-height: 1.4;
     font-size: 1.1rem;
     margin-bottom: 1rem;
 
 }
-.inner-content hr{
+
+.inner-content hr {
     margin-bottom: 1.2rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.hobbies-container-inner{
+.hobbies-container-inner {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 1rem;
 }
 
-.hobbies-container-inner h3{
+.hobbies-container-inner h3 {
     position: relative
 }
-.hobbies-container-inner h3::after{
+
+.hobbies-container-inner h3::after {
     position: absolute;
     content: "";
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     left: -1rem;
     width: 10px;
     height: 10px;
@@ -927,7 +967,8 @@ a.work:hover {
     line-height: 1.5;
 }
 
-.skills-progress-bars, .skills-progress-bars h1, 
+.skills-progress-bars,
+.skills-progress-bars h1,
 .why-choose-me-wrapper h2 {
     color: var(--primaryColor);
     font-size: 1.7rem;
@@ -970,7 +1011,7 @@ a.work:hover {
     border-radius: 5px;
     width: 100%;
     height: 5px;
-    background-color:var(--mainGrey);
+    background-color: var(--mainGrey);
 }
 
 .progress-bar {
@@ -988,7 +1029,7 @@ a.work:hover {
     flex-basis: 45%;
 }
 
-.skills-why-choose-me{
+.skills-why-choose-me {
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--primaryColor);
@@ -996,14 +1037,15 @@ a.work:hover {
     text-align: left;
 }
 
-.skills-why-choose-me h2{
+.skills-why-choose-me h2 {
     font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
 }
-.skills-why-choose-me h2::after{
+
+.skills-why-choose-me h2::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -1014,32 +1056,39 @@ a.work:hover {
     background-color: var(--mainWhite);
 }
 
-.skills-why-choose-me p{
+.skills-why-choose-me p {
     font-size: 1.1rem;
     line-height: 1.6;
     font-weight: 400;
     color: var(--mainGrey);
 }
-.skills-why-choose-me-wrapper{
+
+.skills-why-choose-me-wrapper {
     margin-top: 1.5rem;
 }
-.skills-why-choose-me-wrapper div{
+
+.skills-why-choose-me-wrapper div {
     display: flex;
     justify-content: space-between;
 }
-.skills-why-choose-me-wrapper div:not(:last-child){
+
+.skills-why-choose-me-wrapper div:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.skills-why-choose-me-wrapper div:first-child{
+
+.skills-why-choose-me-wrapper div:first-child {
     padding-bottom: 1rem;
 }
-.skills-why-choose-me-wrapper div:last-child{
+
+.skills-why-choose-me-wrapper div:last-child {
     padding: 1rem 0 0;
 }
-.skills-why-choose-me-wrapper div.padding-top-bottom{
+
+.skills-why-choose-me-wrapper div.padding-top-bottom {
     padding: 1rem 0;
 }
-.skills-why-choose-me-wrapper div i{
+
+.skills-why-choose-me-wrapper div i {
     margin-right: 10px;
     margin-top: 2px;
     font-size: 1.3rem;
@@ -1059,11 +1108,12 @@ a.work:hover {
 
 }
 
-.why-choose-me-wrapper h2{
+.why-choose-me-wrapper h2 {
     margin: 2rem 0 1rem;
-    
+
 }
-.why-choose-me{
+
+.why-choose-me {
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -1073,30 +1123,34 @@ a.work:hover {
     background-color: #FAFAF9;
     z-index: 6;
 }
-.quality{
+
+.quality {
     flex: 1;
     display: flex;
     padding: 0.8rem 1rem;
     text-align: left;
 }
-.quality:not(:last-child){
+
+.quality:not(:last-child) {
     border-right: 1px solid rgb(243, 241, 241);
 
 }
 
-.quality i{
+.quality i {
     color: var(--secondaryColor);
     font-size: 1.8rem;
     margin-right: 0.8rem;
     max-height: 2rem;
 }
-.quality h3{
+
+.quality h3 {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--primaryColor);
     margin: 0 0 0.5rem;
 }
-.quality  p {
+
+.quality p {
     font-size: 1rem;
     color: var(--mainBlack);
     line-height: 1.2;
@@ -1133,7 +1187,7 @@ a.work:hover {
     width: 100%;
 }
 
-.what-we-do-wrapper{
+.what-we-do-wrapper {
     padding: 2rem 4rem;
     border-radius: 10px;
     background-color: var(--mainWhite);
@@ -1143,16 +1197,16 @@ a.work:hover {
     column-gap: 1.5rem;
 }
 
-.what-we-do-wrapper .job{
+.what-we-do-wrapper .job {
     display: flex;
 }
 
-.job .fa-pencil-ruler{
+.job .fa-pencil-ruler {
     margin: 4px 10px 0 0;
 
 }
 
-.job .fa-long-arrow-alt-right{
+.job .fa-long-arrow-alt-right {
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: auto;
@@ -1166,49 +1220,56 @@ a.work:hover {
     -webkit-transition: all 0.5s linear;
     cursor: pointer;
 }
-.job .fa-long-arrow-alt-right:hover{
+
+.job .fa-long-arrow-alt-right:hover {
     border: none;
     color: var(--mainWhite);
     background-color: var(--primaryColor);
 }
-.job div h3{
+
+.job div h3 {
     margin-bottom: 5px;
 }
-.border-btm{
+
+.border-btm {
     padding-bottom: 1.3rem;
     border-bottom: 1px solid var(--secondaryColor);
 }
-.border-top{
+
+.border-top {
     padding-top: 1.3rem;
 }
 
-@media screen and  (max-width:1028px){
-    .third-pad-top{
-        padding-top:1.3rem ;
-        
+@media screen and (max-width:1028px) {
+    .third-pad-top {
+        padding-top: 1.3rem;
+
     }
-    .fouth-border-btm{
+
+    .fouth-border-btm {
         border-bottom: 1px solid var(--secondaryColor);
 
     }
 
 }
 
-@media screen and  (max-width:724px){
-    .second-pad-top{
-        padding-top:1.3rem ;
-        
+@media screen and (max-width:724px) {
+    .second-pad-top {
+        padding-top: 1.3rem;
+
     }
-    .fouth-border-btm{
+
+    .fouth-border-btm {
         padding-bottom: 1.3rem;
 
     }
-    .fifth-border-btm{
+
+    .fifth-border-btm {
         border-bottom: 1px solid var(--secondaryColor);
         padding-bottom: 1.3rem;
     }
-    
-    
+
+
 
 }
 
@@ -1591,7 +1652,7 @@ a.work:hover {
     margin: 20px;
 }
 
-.call-to-action{
+.call-to-action {
     position: absolute;
     bottom: -9rem;
     display: flex;
@@ -1606,7 +1667,7 @@ a.work:hover {
     color: var(--primaryColor);
 }
 
-.call-to-action h2{
+.call-to-action h2 {
     position: relative;
     display: inline-block;
     font-size: 1.5rem;
@@ -1614,7 +1675,7 @@ a.work:hover {
     font-weight: 500;
 }
 
-.call-to-action h2::after{
+.call-to-action h2::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1625,12 +1686,12 @@ a.work:hover {
     width: 2rem;
 }
 
-.cta-btn{
+.cta-btn {
     text-transform: capitalize;
     flex-basis: 20%;
 }
 
-.cta-btn i{
+.cta-btn i {
     margin-left: 5px;
 }
 
@@ -1643,38 +1704,43 @@ a.work:hover {
     color: var(--mainWhite);
 }
 
-.social, .social div {
-   display: flex;
-   align-items: center;
+.social,
+.social div {
+    display: flex;
+    align-items: center;
 }
-.social{
+
+.social {
     margin-right: auto;
     margin-bottom: 0.8rem;
     text-align: left;
     font-size: 1.2rem;
 }
 
-.social div{
+.social div {
     justify-content: space-between;
 }
-.social h3{
+
+.social h3 {
     margin-right: 2rem;
     font-weight: 400;
     color: var(--mainWhite);
-    
+
 }
 
 
-.social  a {
+.social a {
     text-decoration: none;
     color: darkgrey;
     font-size: 1.4rem;
     transition: var(--mainTransition);
 }
-.social  a:hover{
+
+.social a:hover {
     color: var(--mainWhite);
 }
-.social  a:not(:last-child){
+
+.social a:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -1694,7 +1760,7 @@ footer {
     color: red
 }
 
-.copyright a{
+.copyright a {
     color: var(--mainWhite);
 }
 
@@ -1736,32 +1802,54 @@ footer {
 }
 
 /* Project page styles */
+.project-header{
+    max-height: 600px;
+}
+.project-main {
+    margin: 6rem 0 1rem;
+    position: relative;
+}
 
-.logo-header-grid{
+.logo-header-grid {
+    position: absolute;
     flex-basis: 53%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo1 logo2"". logo3";
     grid-template-rows: repeat(2, 1fr);
     row-gap: 0.8rem;
     column-gap: 0.8rem;
     position: relative;
     width: 100%;
     padding-left: 2rem;
-    
-    
+
+
 }
 
-.logo-header-grid div{
+.logo-header-grid div {
     background-color: var(--mainWhite);
     position: relative;
-    transform: rotate(30deg);
+    box-shadow: 2px 2px 2px #ccc;
 }
 
-.logo-header-grid img{
-    max-height: 200px;
+.logo1 {
+    grid-area: logo1;
+    color: var(--mainWhite);
+}
+
+.logo2 {
+    grid-area: logo2;
+}
+
+.logo3 {
+    grid-area: logo3;
+}
+
+.logo-header-grid img {
+    max-height: 250px;
     max-width: 300px;
     height: 100%;
     width: 100%;
     object-fit: contain;
-    
+
 }
