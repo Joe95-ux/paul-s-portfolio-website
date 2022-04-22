@@ -1365,7 +1365,7 @@ a.work:hover {
     background-color: var(--mainWhite);
     transform-origin: top;
     transition: .7s ease-in-out;
-    transition-delay: .1.1s;
+    transition-delay: 1.1s;
 }
 
 .service-info span:nth-child(3) {
@@ -1389,8 +1389,9 @@ a.work:hover {
     background-color: var(--mainWhite);
     transform-origin: left;
     transition: .7s ease-in-out;
-    transition-delay: .1.3s;
+    transition-delay: 1.3s;
 }
+
 
 .service:hover .service-info span:nth-child(1),
 .service:hover .service-info span:nth-child(3) {
@@ -1815,7 +1816,7 @@ footer {
     flex-basis: 53%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo1 logo2"". logo3";
+    grid-template-areas: "logo1 logo2" ". logo3";
     grid-template-rows: repeat(2, 1fr);
     row-gap: 0.8rem;
     column-gap: 0.8rem;
